@@ -525,6 +525,8 @@ class ChargifySubscription(ChargifyBase):
     product = None
     product_handle = ''
     credit_card = None
+    next_billing_at = None
+
 
     def __init__(self, apikey, subdomain, nodename=''):
         super(ChargifySubscription, self).__init__(apikey, subdomain)
